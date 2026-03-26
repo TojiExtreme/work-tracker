@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 
 const STORAGE_KEY = "worktracker_v2";
-// add this anywhere (temporary)
-console.log("version 2");
+
 const defaultData = {
   dailyRate: 130,
   workDays: [],
@@ -68,8 +67,8 @@ export default function App() {
 
   const nextWed = getPayWednesday();
   const weekStart = getWeekStart(nextWed);
-  const weekEnd = new Date(weekStart);
-  weekEnd.setDate(weekStart.getDate() + 6);
+ // const weekEnd = new Date(weekStart);
+ // weekEnd.setDate(weekStart.getDate() + 6);
   const totalAdvances = data.advances.reduce((s, a) => s + Number(a.amount), 0);
   const workedThisWeek = getWorkedDaysBetween(data.workDays, weekStart, weekEnd);
   const grossThisWeek = workedThisWeek.length * Number(data.dailyRate);
