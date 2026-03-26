@@ -1,6 +1,6 @@
 name = "work-tracker"                    # Your project name
 type = "javascript"                      # JS/React project
-account_id = "cfat_aSzv53TCMHP2S8opD8Upkx2FU5PmX069OSWpAFCZ34c3cce3"
+account_id = "d4167904422a9e1a0d3f31338264fcb4"
 workers_dev = true
 compatibility_date = "2026-03-26"       # Set today or current date
 
