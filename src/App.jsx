@@ -70,7 +70,7 @@ export default function App() {
   const weekEnd = new Date(weekStart);
   weekEnd.setDate(weekStart.getDate() + 6);
   const totalAdvances = data.advances.reduce((s, a) => s + Number(a.amount), 0);
-  const workedThisWeek = getWorkedDaysBetween(data.workDays, weekStart, nextWed);
+  const workedThisWeek = getWorkedDaysBetween(data.workDays, weekStart, nextEnd);
   const grossThisWeek = workedThisWeek.length * Number(data.dailyRate);
   const netPay = grossThisWeek - totalAdvances;
 
