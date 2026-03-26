@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 
 const STORAGE_KEY = "worktracker_v2";
-
+// add this anywhere (temporary)
+console.log("version 2");
 const defaultData = {
   dailyRate: 130,
   workDays: [],
