@@ -1,9 +1,5 @@
-name = "work-tracker"                    # Your project name
-type = "javascript"                      # JS/React project
-account_id = "d4167904422a9e1a0d3f31338264fcb4"
-workers_dev = true
-compatibility_date = "2026-03-26"       # Set today or current date
+name = "work-tracker"
+compatibility_date = "2026-03-25"
 
-[build]
-command = "npm run build"                # Build command
-directory = "dist"                       # Output folder for Pages
+[assets]
+directory = "./dist"
