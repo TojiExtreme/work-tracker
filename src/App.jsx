@@ -30,9 +30,9 @@ function getPayWednesday() {
   return sat;
 }
 function getWeekStart(payWed) {
-  // Week starts Sunday = 11 days before payday Wednesday
+  // Week starts Sunday = 10 days before payday Wednesday
   const d = new Date(payWed);
-  d.setDate(d.getDate() - 11);
+  d.setDate(d.getDate() - 10);
   return d;
 }
 function getWorkedDaysBetween(workDays, from, to) {
